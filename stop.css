@@ -1,0 +1,98 @@
+body{
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: white;
+    overflow: hidden;
+    flex-direction: column;
+    height:600px;
+}
+
+header h1{
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 60px;
+}
+.timer{
+    display: flex;
+    font-size: 10px;
+    font-weight: 200;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+#demo{
+    font-size: 20px;
+    font-weight: 800;
+}
+.stop_watch{
+    background-color: white;
+    width: 30%;
+    height: 280px;
+    padding: 30px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 6px 15px 28px 4px black;
+}
+
+.watch_box{
+    display: flex;
+    align-items: center;
+    font-size: 38px;
+    font-weight: 700;
+    gap: 8px ;
+}
+
+.time{
+    background-color: #24275b;
+    color: white;
+    width: 70px;
+    height: 65px;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    border-radius: 5px;
+}
+
+.btn_group{
+    margin-top: 15px;
+
+}
+
+.btn_group button{
+    outline: none;
+    border: none;
+    padding: 0px 16px;
+    font-size: 16px;
+    cursor: pointer;
+    background: transparent;
+    transition: 0.3s ease-in-out;
+}
+
+.btn_group button:nth-child(even){
+    margin: 0 8px;
+    background-color: #24275b;
+    color: white;
+}
+
+.btn_group button:nth-child(odd){
+    border: 1px solid  #24275b;
+
+}
+
+.btn_group button:hover{
+    background-color: #24275b;
+    color: white ;
+}
+
+@media (max-width:1000px) {
+    .stop_watch{
+        width: 50%;
+    }
+}
